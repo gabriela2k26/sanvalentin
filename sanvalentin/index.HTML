@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fondo Degradado Rosado con Botón Centrado</title>
+    <style>
+        @font-face {
+            font-family: 'MiFuente'; /* Nombre que le das a la fuente */
+            src: url('Montserrat-Regular.ttf') format('truetype'); /* Ruta al archivo de fuente */
+        }
+
+        body {
+            background: linear-gradient(to bottom, #ffb3d9, #fe79bc); /* Degradado de rosa pastel a un tono más oscuro */
+            display: flex; /* Usamos flexbox para centrar el contenido */
+            justify-content: center; /* Centrar horizontalmente */
+            align-items: center; /* Centrar verticalmente */
+            height: 100vh; /* Altura completa de la ventana */
+            margin: 0; /* Eliminar márgenes por defecto */
+            flex-direction: column; /* Colocar elementos en columna */
+            padding: 20px;
+        }
+
+        h1 {
+            margin-bottom: 20px; /* Espacio entre el texto y el botón */
+            color: #ffffff; /* Color del texto inicial */
+            font-size: 24px; /* Tamaño de la fuente */
+            text-align: center; /* Centrar el texto */
+            font-family: 'MiFuente', sans-serif; /* Usar la fuente personalizada */
+            margin-top: -10px;
+            transition: color 0.3s; /* Transición suave para el color del texto */
+        }
+
+        .button {
+            padding: 15px 30px; /* Espaciado interno del botón */
+            font-size: 16px; /* Tamaño de la fuente */
+            color: #ff1493; /* Color del texto inicial */
+            background-color: #ffffff; /* Color de fondo del botón */
+            border: none; /* Sin borde */
+            border-radius: 25px; /* Bordes más redondeados */
+            cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+            transition: background-color 0.3s, color 0.3s; /* Transición suave para el color de fondo y texto */
+            font-family: 'MiFuente', sans-serif; /* Usar la fuente personalizada */
+            text-decoration: none; /* Sin subrayado */
+            display: inline-block; /* Para que el padding funcione correctamente */
+        }
+
+        .button:hover {
+            background-color: #ff1493; /* Color de fondo al pasar el mouse */
+            color: white; /* Color del texto al pasar el mouse */
+        }
+
+        h1:hover {
+            color: white; /* Color del texto al pasar el mouse sobre el encabezado */
+        }
+
+        img {
+            max-width: 150px; /* Ancho máximo de la imagen */
+            height: auto; /* Mantener la proporción de la imagen */
+            margin-bottom: 20px; /* Espacio entre la imagen y el texto */
+        }
+    </style>
+</head>
+<body>
+    <img src="perro.png" alt="Descripción de la imagen"> <!-- Imagen encima del texto -->
+    <h1>Hola, te amo</h1> <!-- Texto encima del botón -->
+    <a href="pag1.html" class="button">Dale aquí si me amas, si no, nel</a> <!-- Enlace estilizado como botón -->
+</body>
+</html>
